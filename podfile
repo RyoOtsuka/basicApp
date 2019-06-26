@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '12.2'
+
+target 'basicApp' do
+  
+  use_frameworks!
+
+  #firebase
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
+  pod 'Firebase/Messaging'
+  
+  #tutorial
+  pod 'Pages'
+  
+  #crashlytics (firebase)
+  pod 'Fabric', '~> 1.9.0'
+  pod 'Crashlytics', '~> 3.12.0'
+end
